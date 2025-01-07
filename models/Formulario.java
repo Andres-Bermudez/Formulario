@@ -11,6 +11,7 @@ import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 
 public class Formulario extends JFrame implements ActionListener, ChangeListener {
     /* 
@@ -136,7 +137,8 @@ public class Formulario extends JFrame implements ActionListener, ChangeListener
         create.add(creador);
         
         // Imagen de la interfaz de bienvenida
-        ImageIcon imagenPrincipal = new ImageIcon(getClass().getResource("images/imagen.png"));
+        File file = new File("images/imagen.png");
+        ImageIcon imagenPrincipal = new ImageIcon(file.getAbsolutePath());
         image = new JLabel(imagenPrincipal);
         image.setBounds(10, 10, 300, 410);
         add(image);
