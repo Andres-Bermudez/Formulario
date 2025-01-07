@@ -180,7 +180,7 @@ public class Formulario extends JFrame implements ActionListener, ChangeListener
         add(frameId);
         
         // Fecha de nacimiento
-        date = new JLabel("Fecha de nacimiento:");
+        date = new JLabel("Fecha:");
         date.setBounds(540, 80, 130, 20);
         date.setFont(new Font("Arial", 1, 12));
         add(date);
